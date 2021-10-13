@@ -35,7 +35,7 @@ export const fetchRandomListaNumber = (state) => (dispatch) => {
         body: JSON.stringify({numberOne, numberTwo}) // body data type must match "Content-Type" header
     }).then(response => response.json())
       .then(json => {
-          dispatch({ type: "random-result", data: json });
+          dispatch({ type: "random-numberrandom-result", data: json });
           dispatch({ type: "view-loaded" });
         })
 }
